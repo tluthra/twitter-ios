@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="loginButton" destination="C0A-bj-CzS" id="mLh-7A-iPH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="w2S-mp-1mB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0A-bj-CzS">
+                    <rect key="frame" x="77" y="435" width="166" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Nvo-t7-Cro"/>
+                        <constraint firstAttribute="width" constant="166" id="WNK-Ix-kR8"/>
+                    </constraints>
+                    <state key="normal" title="Login With Twitter">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onLogin:" destination="-1" eventType="touchUpInside" id="vbF-nu-GhC"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="Ano-U2-rBf">
+                    <rect key="frame" x="37" y="81" width="243" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="eiM-4b-vO3"/>
+                        <constraint firstAttribute="width" constant="243" id="hGn-rU-EZZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="w2S-mp-1mB" secondAttribute="trailing" id="D8k-JS-acV"/>
+                <constraint firstItem="Ano-U2-rBf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="Hob-ti-Nyc"/>
+                <constraint firstAttribute="centerX" secondItem="Ano-U2-rBf" secondAttribute="centerX" constant="1.5" id="OPN-os-gmf"/>
+                <constraint firstItem="w2S-mp-1mB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PGl-EK-zuI"/>
+                <constraint firstAttribute="bottom" secondItem="w2S-mp-1mB" secondAttribute="bottom" id="TTv-lp-XHc"/>
+                <constraint firstAttribute="bottom" secondItem="C0A-bj-CzS" secondAttribute="bottom" constant="91" id="YOK-T5-KXH"/>
+                <constraint firstAttribute="centerX" secondItem="C0A-bj-CzS" secondAttribute="centerX" id="jgr-9s-sBt"/>
+                <constraint firstItem="w2S-mp-1mB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mU9-hw-xcU"/>
+            </constraints>
+            <point key="canvasLocation" x="413" y="425"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="2365" height="1774"/>
+        <image name="twitter" width="1139" height="926"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
